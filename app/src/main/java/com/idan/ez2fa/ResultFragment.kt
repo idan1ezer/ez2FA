@@ -19,6 +19,11 @@ class ResultFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val resultTextView: TextView = view.findViewById(R.id.resultTextView)
+
+        arguments?.let {
+            isSuccess = it.getBoolean(ARG_SUCCESS)
+        }
+
         resultTextView.text = if (isSuccess) "Authentication Successful" else "Authentication Failed"
     }
 
