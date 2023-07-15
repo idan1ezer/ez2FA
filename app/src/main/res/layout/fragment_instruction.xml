@@ -1,0 +1,30 @@
+<!-- fragment_instruction.xml -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Add your views and other layout elements here -->
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/instructionAnimationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/dancing_lottie" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Press the volume keys in the correct order."
+        android:textSize="18sp" />
+
+    <!-- Add any other views as needed -->
+
+</LinearLayout>
