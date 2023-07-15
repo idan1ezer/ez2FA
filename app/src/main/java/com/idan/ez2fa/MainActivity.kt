@@ -112,6 +112,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun validateCredentials(username: String, password: String): Boolean {
-        return username == "1" && password == "1"
+        return username == "admin" && password == "password"
     }
 }
